@@ -34,6 +34,13 @@ import Ch22.Person
 import Ch22.PrettyReader
 import Ch22.ReaderPractice
 import Ch22.Shawty
+import Ch23.RandomExample
+import Ch23.RandomExample2
+import Ch23.State
+import Ch23.FizzBuzz
+import Ch23.Exercises
+import Ch24.LearnParsers
+import Ch24.Fractions
 
 main :: IO ()
 main = do

@@ -42,3 +42,4 @@ executable haskellbook
                      , criterion
                      , vector
                      , directory
+                     , dlist
