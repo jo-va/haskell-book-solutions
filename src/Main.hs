@@ -41,6 +41,11 @@ import Ch23.FizzBuzz
 import Ch23.Exercises
 import Ch24.LearnParsers
 import Ch24.Fractions
+import Ch24.AltParsing
+import Ch24.Ini
+import Ch24.Marshalling
+import Ch24.Semver
+import Ch24.Digit
 
 main :: IO ()
 main = do
@@ -65,3 +70,6 @@ main = do
 
     putStrLn "Chapter 21"
     Ch21.Exercises.spec
+
+    putStrLn "Chapter 24"
+    Ch24.Ini.spec

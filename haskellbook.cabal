@@ -35,6 +35,7 @@ executable haskellbook
                      , time
                      , safe
                      , hedis
+                     , attoparsec
                      , network-uri
                      , mtl
                      , scotty
