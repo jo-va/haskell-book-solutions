@@ -44,3 +44,5 @@ executable haskellbook
                      , vector
                      , directory
                      , dlist
+                     , primitive
+                     , zlib

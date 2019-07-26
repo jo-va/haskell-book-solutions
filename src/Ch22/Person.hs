@@ -5,7 +5,7 @@ module Ch22.Person where
 import Control.Applicative (liftA2)
 
 newtype Reader r a =
-    Reader { runReader :: r -> a }
+    Reader { runReader' :: r -> a }
 
 newtype HumanName =
     HumanName String
@@ -89,4 +89,4 @@ instance Monad (Reader r) where
           -> (a -> Reader r b)
           -> Reader r b
     Reader ra >>= aRb =
-        Reader $ \r -> runReader (aRb $ ra r) r
+        Reader $ \r -> runReader' (aRb $ ra r) r

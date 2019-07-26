@@ -5,8 +5,8 @@ module Ch22.PrettyReader where
 flip :: (a -> b -> c) -> (b -> a -> c)
 flip f a b = f b a
 
-const :: a -> b -> a
-const a b = a
+const' :: a -> b -> a
+const' a b = a
 
 (.) :: (b -> c) -> (a -> b) -> (a -> c)
 f . g = \a -> f (g a)
@@ -26,7 +26,7 @@ instance Functor ((->) r) where
     fmap = (.)
 
 instance Applicative ((->) r) where
-    pure = const
+    pure = const'
     f <*> a = \r -> f r (a r)
 
 instance Monad ((->) r) where

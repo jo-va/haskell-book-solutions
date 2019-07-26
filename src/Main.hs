@@ -46,30 +46,50 @@ import Ch24.Ini
 import Ch24.Marshalling
 import Ch24.Semver
 import Ch24.Digit
+import Ch24.Phone
+import Ch24.LogFile
+import Ch24.IPV4
+import Ch24.IPV6
+import Ch25.Identity
+import Ch25.Compose
+import Ch25.Exercises
+import Ch26.MaybeT
+import Ch26.EitherT
+import Ch26.ReaderT
+import Ch26.StateT
+import Ch26.OuterInner
+import Ch26.Scotty
+import Ch26.LoginExercise
+import Ch26.Exercises
+import Ch26.HitCounter
+import Ch27.Kaboom
+import Ch27.CoreDump
+import Ch27.Trace
+import Ch27.ManualBang
+import Ch27.Exercises
+import Ch27.StrictList
+import Ch27.Bench
+import Ch27.ListVsMap
+import Ch27.MapVsSet
+import Ch27.ListVsSequence
+import Ch27.ListVsVector
+import Ch27.VectorFusion
+import Ch27.VectorUpdate
+import Ch27.MutableVector
+import Ch27.ByteString
 
 main :: IO ()
 main = do
-    putStrLn "Chapter 16"
-
-    putStrLn "Functor Instances"
     Ch16.Instances.spec
     Ch16.Possibly.spec
-    Ch16.Sum.spec
-    Ch16.Exercises.spec
-
-    putStrLn "Chapter 17"
+    --Ch16.Sum.spec
+    --Ch16.Exercises.spec
     Ch17.ZipList.spec
     Ch17.List.spec
     Ch17.Validation.spec
     Ch17.Exercises.spec
-
-    putStrLn "Chapter 18"
     Ch18.Either.spec
     Ch18.BadMonad.spec
     Ch18.Exercises.spec
-
-    putStrLn "Chapter 21"
     Ch21.Exercises.spec
-
-    putStrLn "Chapter 24"
     Ch24.Ini.spec
