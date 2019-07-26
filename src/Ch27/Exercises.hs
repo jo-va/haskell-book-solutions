@@ -5,3 +5,4 @@ y = x `seq` "blah"
 
 testBottom = do
     print (snd (x, y))
+

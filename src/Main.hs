@@ -77,6 +77,9 @@ import Ch27.VectorFusion
 import Ch27.VectorUpdate
 import Ch27.MutableVector
 import Ch27.ByteString
+import Ch27.Char8ProllyNotWhatYouWant
+import Ch27.DList
+import Ch27.MVar
 
 main :: IO ()
 main = do

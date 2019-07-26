@@ -46,3 +46,4 @@ executable haskellbook
                      , dlist
                      , primitive
                      , zlib
+                     , utf8-string

@@ -8,8 +8,8 @@ flip f a b = f b a
 const' :: a -> b -> a
 const' a b = a
 
-(.) :: (b -> c) -> (a -> b) -> (a -> c)
-f . g = \a -> f (g a)
+comp :: (b -> c) -> (a -> b) -> (a -> c)
+f `comp` g = \a -> f (g a)
 
 class Functor f where
     fmap :: (a -> b) -> f a -> f b
@@ -23,7 +23,7 @@ class Applicative f => Monad f where
     (>>=) :: f a -> (a -> f b) -> f b
 
 instance Functor ((->) r) where
-    fmap = (.)
+    fmap = comp
 
 instance Applicative ((->) r) where
     pure = const'
